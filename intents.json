@@ -1,0 +1,33 @@
+{"intents": [
+        {"tag": "ucapan",
+         "patterns": ["Assalamualaikum", "Selamat pagi", "Selamat siang","Selamat sore","Selamat malam", "Salam", "Hai", "Helo", "Hey", "Hay"],
+         "responses": ["Salam, ada yang bisa kami bantu?", "Salam, aku Bening"],
+         "context": [""]
+        },
+		{"tag": "terimakasih",
+         "patterns": ["Matur nuwun", "Terima kasih", "Makasih","terimakasih","Suwun"],
+         "responses": ["Baik, sama-sama", "Iya, kembali kasih", "Nggih, sami-sami"],
+         "context": [""]
+        },
+		{"tag": "daftar",
+         "patterns": ["Saya ingin mendaftar", "Daftar", "Saya ingin registrasi", "Daftar Poli Rawat Jalan"],
+         "responses": ["Baik, silahkan masukkan Nama dan Nomor RM"],
+         "context": [""]
+        },
+		{"tag": "identitas",
+         "patterns": ["Nama saya", "Nama Pasien", "Pasien", "No RM", "norm"],
+         "responses": ["Baik, tujuan ke Poli mana?"],
+         "context": [""]
+        },
+		{"tag": "poli",
+         "patterns": ["Saya ingin mendaftar ke Poli", "Tujuan ke Poli", "Mau ke Poli", "Poli Bedah", "Poli Penyakit Dalam", "Poli Anak", "Poli Syaraf", "Poli Saraf"],
+         "responses": ["Baik, kapan Anda akan berkunjung?"],
+         "context": [""]
+        },
+		{"tag": "waktu",
+         "patterns": ["Hari", "Senin", "Tanggal", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"],
+         "responses": ["Oke, dokternya bisa kok hari itu"],
+         "context": [""]
+        }
+   ]
+}
