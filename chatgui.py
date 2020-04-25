@@ -1,8 +1,13 @@
 import nltk
 from nltk.stem import WordNetLemmatizer
+from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 lemmatizer = WordNetLemmatizer()
 import pickle
 import numpy as np
+
+# create stemmer
+factory = StemmerFactory()
+stemmer = factory.create_stemmer()
 
 from keras.models import load_model
 model = load_model('chatbot_model.h5')
@@ -17,7 +22,8 @@ def clean_up_sentence(sentence):
     # tokenize the pattern - split words into array
     sentence_words = nltk.word_tokenize(sentence)
     # stem each word - create short form for word
-    sentence_words = [lemmatizer.lemmatize(word.lower()) for word in sentence_words]
+    # sentence_words = [lemmatizer.lemmatize(word.lower()) for word in sentence_words]
+    sentence_words = [stemmer.stem(word.lower()) for word in sentence_words]
     return sentence_words
 
 # return bag of words array: 0 or 1 for each word in the bag that exists in the sentence
