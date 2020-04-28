@@ -1,2 +1,4 @@
 # Dependency directories
 ipynb_checkpoints/
+chatbot_flask/env
+chatbot_flask/__pycache__
